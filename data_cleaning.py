@@ -74,3 +74,6 @@ df["Mode"] = df["Mode"].fillna(df["Mode"].mode()[0])
 print('\n Null values in Mode Column is ',df["Mode"].isnull().sum())
 
 print('\n',df.isnull().sum())
+
+# getting the cleaned data into csv file
+df.to_csv("cleaned_dataset.csv", index=False)
